@@ -74,7 +74,7 @@ body{
 .hresume{
 	width:760px;	
 	margin:50px auto;
-	font:1em Arial;
+	font:.91em Arial;
 	color:#333;
 }
 
@@ -87,15 +87,14 @@ section > .tit{
 	border-top:none;
 	color:#000;
 	padding:10px 10px 3px 10px;
-	font-size:.9em;
 	border-radius:0 0 5px 5px;
 	font-weight:bold;
-	font-size:.8em;
+	font-size:1.1em;
 	text-transform:uppercase;
 }
 
 p{
-	font-size:.8em;
+	font-size:1em;
 	line-height:1.72em;
 	letter-spacing:.03em;
 }
@@ -156,7 +155,7 @@ section > p{
 	}
 		section.skills .skill{
 			display: inline-block;
-			font-size:.7em;
+			font-size:.9em;
 			background-color:#fff;
 			padding:4px 10px;
 			margin:3px;
@@ -179,5 +178,21 @@ section > p{
 		}
 		.skill.android{
 			background:url(http://www.google.com/s2/u/0/favicons?domain=android.com) 2px center no-repeat;
+			padding-left:20px!important;		
+		}
+		.skill.mysql{
+			background:url(http://www.google.com/s2/u/0/favicons?domain=mysql.com) 2px center no-repeat;
+			padding-left:20px!important;		
+		}
+		.skill.mongo{
+			background:url(http://www.google.com/s2/u/0/favicons?domain=mongodb.org) 2px center no-repeat;
+			padding-left:20px!important;		
+		}
+		.skill.jquery{
+			background:url(http://www.google.com/s2/u/0/favicons?domain=jquery.com) 2px center no-repeat;
+			padding-left:20px!important;		
+		}
+		.skill.php{
+			background:url(http://www.google.com/s2/u/0/favicons?domain=php.net) 2px center no-repeat;
 			padding-left:20px!important;		
 		}
