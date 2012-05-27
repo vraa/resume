@@ -97,7 +97,7 @@ section > .tit{
 p{
 	font-size:.8em;
 	line-height:1.72em;
-	letter-spacing:.05em;
+	letter-spacing:.03em;
 }
 section > p{
 	padding:10px;
@@ -151,5 +151,18 @@ section > p{
 				font-style:italic;
 				text-transform:lowercase;
 			}
+	section.skills{
+		padding:40px 20px 10px 20px;
+	}
+		section.skills .skill{
+			display: inline-block;
+			font-size:.7em;
+			background-color:#fff;
+			padding:4px 10px;
+			margin:3px;
+			border:1px solid #eee;
+			border-radius:10px;
+			box-shadow:0 0 1px #eee;
+		}
 
 
