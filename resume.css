@@ -86,17 +86,33 @@ section > .tit{
 	border:1px dashed #ddd;
 	border-top:none;
 	color:#000;
-	padding:3px 10px;
+	padding:10px 10px 3px 10px;
 	font-size:.9em;
 	border-radius:0 0 5px 5px;
 	font-weight:bold;
 	font-size:.8em;
+	text-transform:uppercase;
 }
-	.hresume > header{
+
+p{
+	font-size:.8em;
+	line-height:1.72em;
+	letter-spacing:.05em;
+}
+section > p{
+	padding:10px;
+}
+	.hresume > header, .hresume > section{
 		background-color:#fff;
 		border-radius:5px;
 		border:1px dashed #ddd;
 		background:url(img/ptrn.png);
+		position:relative;
+		margin-bottom:20px;
+	}
+
+	.hresume > section{
+		padding-top:30px;
 	}
 		header > section{
 			float:left;
