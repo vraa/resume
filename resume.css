@@ -165,4 +165,19 @@ section > p{
 			box-shadow:0 0 1px #eee;
 		}
 
-
+		.skill.java{
+			background:url(http://www.google.com/s2/u/0/favicons?domain=java.com) 2px center no-repeat;
+			padding-left:20px!important;
+		}
+		.skill.appengine{
+			background:url(http://www.google.com/s2/u/0/favicons?domain=appengine.google.com) 2px center no-repeat;
+			padding-left:20px!important;	
+		}
+		.skill.git{
+			background:url(http://www.google.com/s2/u/0/favicons?domain=git-scm.com) 2px center no-repeat;
+			padding-left:20px!important;		
+		}
+		.skill.android{
+			background:url(http://www.google.com/s2/u/0/favicons?domain=android.com) 2px center no-repeat;
+			padding-left:20px!important;		
+		}
