@@ -111,7 +111,7 @@ section > p{
 	}
 
 	.hresume > section{
-		padding-top:30px;
+		padding-top:40px;
 	}
 		header > section{
 			float:left;
@@ -150,6 +150,9 @@ section > p{
 				font-style:italic;
 				text-transform:lowercase;
 			}
+	section.summary{
+		padding:40px 20px 10px 20px;
+	}
 	section.skills{
 		padding:40px 20px 10px 20px;
 	}
@@ -196,3 +199,53 @@ section > p{
 			background:url(http://www.google.com/s2/u/0/favicons?domain=php.net) 2px center no-repeat;
 			padding-left:20px!important;		
 		}
+
+	.work{
+		padding:0 20px 10px 20px;
+	}
+		.work .vcalendar li{
+			display: inline-block;
+			position: relative;
+			padding:30px;
+			border:1px solid #eee;
+		}
+			.work .dtstart{
+				position: absolute;
+				top:0;
+				right:0;
+			}
+			.work .dtend{
+				position:absolute;
+				top:0;
+				left:0;
+			}
+			.work .dtstart, .work .dtend{
+				padding: 5px;
+				font-size:.8em;
+				box-shadow:0 2px 3px #aaa;
+				border-radius:0 0 5px 5px;
+			}
+			.experience.vevent{
+				border-radius:0 0 5px 5px;
+				margin-right:10px;
+				background: #eeeeee; /* Old browsers */
+background: -moz-linear-gradient(top,  #eeeeee 0%, #eeeeee 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* IE10+ */
+background: linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+
+			}
+			.experience.csc{
+				width:200px;
+			}
+			.experience.infy{
+				width:300px;
+			}
+			.experience .location{
+				margin-top:10px;
+				display: block;
+				font-size:1.52em;
+			}
