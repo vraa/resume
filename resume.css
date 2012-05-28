@@ -349,3 +349,9 @@ section > p{
 				float:right;
 				margin-right:30px;
 			}
+	footer{
+		font-size:.8em;
+	}
+		footer a{
+			color:#000;
+		}
