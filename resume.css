@@ -207,45 +207,102 @@ section > p{
 			display: inline-block;
 			position: relative;
 			padding:30px;
-			border:1px solid #eee;
+			border:1px solid #ddd;
 		}
 			.work .dtstart{
 				position: absolute;
 				top:0;
 				right:0;
+				border-radius:0 0 0 5px;
+				box-shadow:-2px 2px 1px #ddd;
 			}
 			.work .dtend{
 				position:absolute;
 				top:0;
 				left:0;
+				border-radius:0 0 5px 0;
+				box-shadow:2px 2px 1px #ddd;
 			}
 			.work .dtstart, .work .dtend{
 				padding: 5px;
 				font-size:.8em;
-				box-shadow:0 2px 3px #aaa;
-				border-radius:0 0 5px 5px;
 			}
 			.experience.vevent{
 				border-radius:0 0 5px 5px;
 				margin-right:10px;
-				background: #eeeeee; /* Old browsers */
-background: -moz-linear-gradient(top,  #eeeeee 0%, #eeeeee 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* IE10+ */
-background: linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
-
+				border:1px solid #000;
 			}
 			.experience.csc{
-				width:200px;
+				width:33%;
+				background: #f7fbfc; /* Old browsers */
+				background: -moz-linear-gradient(top,  #f7fbfc 0%, #d9edf2 40%, #add9e4 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7fbfc), color-stop(40%,#d9edf2), color-stop(100%,#add9e4)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* IE10+ */
+				background: linear-gradient(top,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#add9e4',GradientType=0 ); /* IE6-9 */
+				border-color:#AEDAE4!important;
 			}
 			.experience.infy{
-				width:300px;
+				width:45%;
+				background: #f9fcf8; /* Old browsers */
+				background: -moz-linear-gradient(top,  #f9fcf8 0%, #dff2d8 40%, #bbe4ae 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9fcf8), color-stop(40%,#dff2d8), color-stop(100%,#bbe4ae)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #f9fcf8 0%,#dff2d8 40%,#bbe4ae 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #f9fcf8 0%,#dff2d8 40%,#bbe4ae 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #f9fcf8 0%,#dff2d8 40%,#bbe4ae 100%); /* IE10+ */
+				background: linear-gradient(top,  #f9fcf8 0%,#dff2d8 40%,#bbe4ae 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf8', endColorstr='#bbe4ae',GradientType=0 ); /* IE6-9 */
+				border-color:#BFE6B3!important;
 			}
 			.experience .location{
 				margin-top:10px;
 				display: block;
 				font-size:1.52em;
 			}
+.scale{
+	position: relative;
+	margin:10px 0;
+}
+	.scale > span{
+		display: inline-block;
+	}
+	.scale .left-end{
+		width: 0;
+		height: 0;
+		border-top: 10px solid transparent;
+		border-right: 20px solid #ddd;
+		border-bottom: 10px solid transparent;
+		border-radius:5px;
+		position: absolute;
+		top:-10px;
+		left:0;
+	}
+	.scale .right-end{
+		width: 0;
+		height: 0;
+		border-top: 10px solid transparent;
+		border-left: 20px solid #ddd;
+		border-bottom: 10px solid transparent;
+		border-radius:5px;
+		position: absolute;
+		top:-10px;
+		right:0;
+	}
+	.scale .line{
+		width:100%;
+		border-top:1px dashed #ddd;
+	}
+		.scale .line label{
+			font-size:.8em;
+			color:#ddd;
+		}
+		.scale .line .lbl-left{
+			float:left;
+			margin-left:30px;
+		}
+		.scale .line .lbl-right{
+			float:right;
+			margin-right:30px;
+		}
