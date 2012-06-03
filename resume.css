@@ -90,12 +90,26 @@ section > .tit{
 	border:1px dashed #aaa;
 	border-top:none;
 	color:#000;
-	padding:10px 10px 3px 10px;
+	padding:10px 10px 5px 40px;
 	border-radius:0 0 5px 5px;
 	font-weight:bold;
 	font-size:1.1em;
 	text-transform:uppercase;
+	background:#fff url(img/ninja.png) no-repeat;
 }
+	section.contact .tit{
+		background:#fff;
+		padding-left:10px;
+	}
+	section.summary .tit{
+		background-position:left -104px;
+	}
+	section.skills .tit{
+		background-position:left -34px;
+	}
+	section.honors .tit{
+		background-position:left -171px;
+	}
 
 p{
 	font-size:1em;
