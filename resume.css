@@ -317,7 +317,16 @@ section > p{
 				margin-top:10px;
 				display: block;
 				font-size:1.52em;
+				margin-bottom:5px;
 			}
+				.experience .location a{
+					color: #000;
+					text-decoration:none;
+				}
+					.experience .location a:hover, .experience .location a:focus{
+						border-bottom:1px dashed;
+						color: blue;
+					}
 	.honors{
 
 	}
