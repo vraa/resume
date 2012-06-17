@@ -278,8 +278,19 @@ section > p{
 				margin-right:10px;
 				border:1px solid #000;
 			}
+			.experience.paypal{
+				width:20%;
+				background: #fefcea; /* Old browsers */
+				background: -moz-linear-gradient(top,  #fefcea 0%, #f1da36 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f1da36)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* IE10+ */
+				background: linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+			}
 			.experience.csc{
-				width:33%;
+				width:23%;
 				background: #f7fbfc; /* Old browsers */
 				background: -moz-linear-gradient(top,  #f7fbfc 0%, #d9edf2 40%, #add9e4 100%); /* FF3.6+ */
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7fbfc), color-stop(40%,#d9edf2), color-stop(100%,#add9e4)); /* Chrome,Safari4+ */
@@ -291,7 +302,7 @@ section > p{
 				border-color:#AEDAE4!important;
 			}
 			.experience.infy{
-				width:45%;
+				width:25%;
 				background: #f9fcf8; /* Old browsers */
 				background: -moz-linear-gradient(top,  #f9fcf8 0%, #dff2d8 40%, #bbe4ae 100%); /* FF3.6+ */
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9fcf8), color-stop(40%,#dff2d8), color-stop(100%,#bbe4ae)); /* Chrome,Safari4+ */
