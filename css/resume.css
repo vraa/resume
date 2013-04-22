@@ -15,6 +15,9 @@ body{
 	.resume > section{
 		border-bottom: 1px solid #eee;
 	}
+	.resume p{
+		line-height: 2em;
+	}
 
 /* top section */
 .hero{
@@ -54,3 +57,9 @@ body{
 					opacity: .5;
 					margin-right: .5em;
 				}
+.summary{
+}
+	.summary > article{
+		padding: 1em;
+		border-left: 10px solid #f00;
+	}				
