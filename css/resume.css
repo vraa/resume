@@ -18,8 +18,11 @@ body{
 	.resume p{
 		line-height: 2em;
 	}
+	.resume > section > article{
+		padding: 1em;
+		border-left: 10px solid #aaa;
+	}
 
-/* top section */
 .hero{
 }
 	.hero .photo{
@@ -60,6 +63,30 @@ body{
 .summary{
 }
 	.summary > article{
-		padding: 1em;
-		border-left: 10px solid #f00;
-	}				
+		border-left-color: #f00 !important;
+	}
+.technologies{
+}
+	.technologies > article{
+		border-left-color: #0f0 !important;
+	}
+	.technologies ul{
+		list-style: none;
+	}
+		.technologies .skill{
+			font: 1.1em Consolas;
+			font-weight: normal;
+			display: inline-block;
+			margin: .4em .2em;
+			padding: .4em;
+			background-color: #fafafa;
+			border: 1px solid #eee;
+			border-radius: .2em;
+			color: #888;
+			box-shadow: 0 0 2px #eee;
+			cursor: default;
+		}
+			.technologies .skill:hover, .technologies .skill:focus{
+				background-color: #fff;
+				border-color: #0f0;
+			}
