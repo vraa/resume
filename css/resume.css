@@ -1,390 +1,56 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.outline{
-	outline:red solid thin;
-}
-
-/* float clearing for IE6 */
-* html .clearfix{
-  height: 1%;
-  overflow: visible;
-}
-
-/* float clearing for IE7 */
-*+html .clearfix{
-  min-height: 1%;
-}
-
-/* float clearing for everyone else */
-.clearfix:after{
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
-  font-size: 0;
-}
-
-/*= start muzic */
 body{
+	background-color: #fafafa;
+	color: #444;
 }
 
-strong{
-	font-weight:bold;
+.resume{
+	font:1em Arial;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #eee;
+	margin-top: 2em;
 }
-.hresume{
-	width:760px;	
-	margin:50px auto;
-	font:.91em Arial;
-	color:#333;
+	.resume > section{
+		border-bottom: 1px solid #eee;
+	}
+
+/* top section */
+.hero{
 }
-
-section > .tit{
-	position: absolute;
-	top:-1px;
-	left:20px;
-	background-color:#fff;
-	border:1px dashed #bbb;
-	border-top:none;
-	color:#000;
-	padding:10px 10px 5px 40px;
-	border-radius:0 0 5px 5px;
-	font-weight:bold;
-	font-size:1.1em;
-	text-transform:uppercase;
-	background:#fff url(img/ninja.png) no-repeat;
-}
-	section.contact .tit{
-		background:#fff;
-		padding-left:10px;
+	.hero .photo{
 	}
-	section.summary .tit{
-		background-position:left -104px;
+		.hero .photo img{
+			margin: 2em;
+			border-radius: 10em;
+		}
+	.hero .name{
+		padding: 1em;
 	}
-	section.skills .tit{
-		background-position:left -34px;
+		.hero .name h1{
+			font-size: 3em;
+		}
+	.contact{
+		padding: 1em;
+		border-left: 1px solid #eee;
 	}
-	section.honors .tit{
-		background-position:left -171px;
-	}
-
-p{
-	font-size:1em;
-	line-height:1.72em;
-	letter-spacing:.03em;
-}
-section > p{
-	padding:10px;
-}
-	.hresume > header, .hresume > section{
-		background-color:#fff;
-		border-radius:5px;
-		border:1px dashed #bbb;
-		background:#fff url(img/ptrn.png);
-		position:relative;
-		margin-bottom:20px;
-	}
-
-	.hresume > section{
-		padding-top:40px;
-	}
-		header > section{
-			float:left;
+		.contact h2{
+			display: none;
 		}
-
-		.hero{
-			padding:10px;
-			width:57%;
+		.contact ul{
+			list-style: none;
 		}
-			.hero .fn{
-				font-weight:bold;
-				font-size:2em;
-			}
-			.hero .note{
-				margin-top:5px;
-				padding:0;
-				color:#333;
-				font-size:.8em;
-			}
-			.hero .links{
-				font-weight:bold;
-				font-size:.8em;
-				margin-top:10px;
-			}
-				.hero .links li{
-					display: inline-block;
-					margin-right:30px;
-					background:url(img/sprite.png) no-repeat;
-					padding-left:20px;
-					height:17px;
-				}
-					.links li.em{
-						background-position:0 -33px;
-					}
-					.links li.tw{
-						background-position:0 -63px;
-					}
-					.links li.gi{
-						background-position:0 -1px;
-					}
-					.links li.li{
-						background-position:0 -95px;
-					}
-				.hero .links a{
-					color:#000;
-					text-decoration:none;
-				}
-		.contact{
-			position: relative;
-			padding:50px 0 0 40px;
-			width:35%;
-		}
-			.contact li{
-				margin:5px 0;
-				font-size:.8em;
-			}
-				.contact li a{
-					color:#333;
-					text-decoration:none;
-					border-bottom:1px dotted;
-				}
-			.contact label{
-				color:#999;
-				display: inline-block;
-				width:60px;
-				text-transform:lowercase;
-			}
-	section.summary{
-		padding:40px 20px 10px 20px;
-	}
-	section.skills{
-		padding:40px 20px 10px 20px;
-	}
-		section.skills .skill{
-			display: inline-block;
-			font-size:.9em;
-			background-color:#fff;
-			padding:4px 10px;
-			margin:3px;
-			border:1px solid #eee;
-			border-radius:10px;
-			box-shadow:0 0 1px #eee;
-		}
-
-		.skill.java{
-			background:url(http://www.google.com/s2/u/0/favicons?domain=java.com) 2px center no-repeat;
-			padding-left:20px!important;
-		}
-		.skill.appengine{
-			background:url(http://www.google.com/s2/u/0/favicons?domain=appengine.google.com) 2px center no-repeat;
-			padding-left:20px!important;	
-		}
-		.skill.git{
-			background:url(http://www.google.com/s2/u/0/favicons?domain=git-scm.com) 2px center no-repeat;
-			padding-left:20px!important;		
-		}
-		.skill.android{
-			background:url(http://www.google.com/s2/u/0/favicons?domain=android.com) 2px center no-repeat;
-			padding-left:20px!important;		
-		}
-		.skill.mysql{
-			background:url(http://www.google.com/s2/u/0/favicons?domain=mysql.com) 2px center no-repeat;
-			padding-left:20px!important;		
-		}
-		.skill.mongo{
-			background:url(http://www.google.com/s2/u/0/favicons?domain=mongodb.org) 2px center no-repeat;
-			padding-left:20px!important;		
-		}
-		.skill.jquery{
-			background:url(http://www.google.com/s2/u/0/favicons?domain=jquery.com) 2px center no-repeat;
-			padding-left:20px!important;		
-		}
-		.skill.php{
-			background:url(http://www.google.com/s2/u/0/favicons?domain=php.net) 2px center no-repeat;
-			padding-left:20px!important;		
-		}
-
-	.work{
-		padding:0 20px 10px 20px;
-	}
-		.work .vcalendar li{
-			display: inline-block;
-			position: relative;
-			padding:30px;
-			border:1px solid #ddd;
-		}
-			.work .dtstart{
-				position: absolute;
-				top:0;
-				right:0;
-				border-radius:0 0 0 5px;
-				box-shadow:-2px 2px 1px #ddd;
-			}
-			.work .dtend{
-				position:absolute;
-				top:0;
-				left:0;
-				border-radius:0 0 5px 0;
-				box-shadow:2px 2px 1px #ddd;
-			}
-			.work .dtstart, .work .dtend{
-				padding: 5px;
-				font-size:.8em;
-			}
-			.experience.vevent{
-				border-radius:0 0 5px 5px;
-				margin-right:10px;
-				border:1px solid #000;
-			}
-			.experience.paypal{
-				width:20%;
-				background: #fefcea; /* Old browsers */
-				background: -moz-linear-gradient(top,  #fefcea 0%, #f1da36 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f1da36)); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* IE10+ */
-				background: linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
-			}
-			.experience.csc{
-				width:23%;
-				background: #f7fbfc; /* Old browsers */
-				background: -moz-linear-gradient(top,  #f7fbfc 0%, #d9edf2 40%, #add9e4 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7fbfc), color-stop(40%,#d9edf2), color-stop(100%,#add9e4)); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* IE10+ */
-				background: linear-gradient(top,  #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#add9e4',GradientType=0 ); /* IE6-9 */
-				border-color:#AEDAE4!important;
-			}
-			.experience.infy{
-				width:25%;
-				background: #f9fcf8; /* Old browsers */
-				background: -moz-linear-gradient(top,  #f9fcf8 0%, #dff2d8 40%, #bbe4ae 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9fcf8), color-stop(40%,#dff2d8), color-stop(100%,#bbe4ae)); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top,  #f9fcf8 0%,#dff2d8 40%,#bbe4ae 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top,  #f9fcf8 0%,#dff2d8 40%,#bbe4ae 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top,  #f9fcf8 0%,#dff2d8 40%,#bbe4ae 100%); /* IE10+ */
-				background: linear-gradient(top,  #f9fcf8 0%,#dff2d8 40%,#bbe4ae 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf8', endColorstr='#bbe4ae',GradientType=0 ); /* IE6-9 */
-				border-color:#BFE6B3!important;
-			}
-			.experience .location{
-				margin-top:10px;
+			.contact ul li{
 				display: block;
-				font-size:1.52em;
-				margin-bottom:5px;
+				padding: .4em;
 			}
-				.experience .location a{
-					color: #000;
-					text-decoration:none;
+			.contact ul label{
+				display: inline-block;
+				width: 100px;
+				color: #666;
+			}
+				.contact ul label i{
+					opacity: .5;
+					margin-right: .5em;
 				}
-					.experience .location a:hover, .experience .location a:focus{
-						border-bottom:1px dashed;
-						color: blue;
-					}
-	.honors{
-
-	}
-		.honors ol{
-			list-style:decimal;
-			margin-left:50px;
-		}
-			.honors ol li{
-				margin:10px 0;
-			}
-	.scale{
-		position: relative;
-		margin:20px 0 5px 0;
-	}
-		.scale > span{
-			display: inline-block;
-		}
-		.scale .left-end{
-			width: 0;
-			height: 0;
-			border-top: 10px solid transparent;
-			border-right: 20px solid #ddd;
-			border-bottom: 10px solid transparent;
-			border-radius:5px;
-			position: absolute;
-			top:-10px;
-			left:0;
-		}
-		.scale .right-end{
-			width: 0;
-			height: 0;
-			border-top: 10px solid transparent;
-			border-left: 20px solid #ddd;
-			border-bottom: 10px solid transparent;
-			border-radius:5px;
-			position: absolute;
-			top:-10px;
-			right:0;
-		}
-		.scale .line{
-			width:100%;
-			border-top:1px dashed #ddd;
-		}
-			.scale .line label{
-				font-size:.8em;
-				color:#ddd;
-			}
-			.scale .line .lbl-left{
-				float:left;
-				margin-left:30px;
-			}
-			.scale .line .lbl-right{
-				float:right;
-				margin-right:30px;
-			}
-	footer{
-		font-size:.8em;
-	}
-		footer a{
-			color:#000;
-		}
