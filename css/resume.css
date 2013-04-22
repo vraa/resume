@@ -11,6 +11,7 @@ body{
 	border-radius: 5px;
 	box-shadow: 0 0 10px #eee;
 	margin-top: 2em;
+	margin-bottom: 2em;
 }
 	.resume > section{
 		border-bottom: 1px solid #eee;
@@ -20,7 +21,7 @@ body{
 	}
 	.resume > section > article{
 		padding: 1em;
-		border-left: 10px solid #aaa;
+		border-left: 10px solid #eee;
 	}
 
 .hero{
@@ -51,6 +52,9 @@ body{
 				display: block;
 				padding: .4em;
 			}
+			.contact li a, .contact li{
+				color: #000;
+			}
 			.contact ul label{
 				display: inline-block;
 				width: 100px;
@@ -63,15 +67,22 @@ body{
 .summary{
 }
 	.summary > article{
-		border-left-color: #f00 !important;
+		border-left-color: #E3AAD6 !important;
+	}
+	.summary h2{
+		color: #E3AAD6;
 	}
 .technologies{
 }
+	.technologies h2{
+		color: #93DFB8;
+	}
 	.technologies > article{
-		border-left-color: #0f0 !important;
+		border-left-color: #93DFB8 !important;
 	}
 	.technologies ul{
 		list-style: none;
+		margin: 0;
 	}
 		.technologies .skill{
 			font: 1.1em Consolas;
@@ -88,5 +99,46 @@ body{
 		}
 			.technologies .skill:hover, .technologies .skill:focus{
 				background-color: #fff;
-				border-color: #0f0;
+				border-color: #93DFB8;
 			}
+.experiences{
+}
+	.experiences h2{
+		color: #B5D8EB;
+	}
+	.experiences > article{
+		border-left-color: #B5D8EB !important;
+	}
+	.experiences ol{
+		list-style: disc;
+	}
+	.experiences .experience{
+		margin: 1em 0;
+		font-size: 1.2em;
+	}
+	.experience .summary:after{
+		content: '@';
+		padding: 0 .5em;
+		color: #999;
+	}
+	.experience .location{
+		font-style: italic;
+	}
+		.experience .location a{
+			color: #999;
+		}
+	.experience .time{
+		color: #999;
+	}
+		.experience .time .dtstart:before{
+			content: 'from';
+			padding:0 .5em;
+		}
+		.experience .time .dtstart:after{
+			content: 'to';
+			padding:0 .5em;
+		}
+.meta{
+	font-size: .8em;
+	color: #aaa;
+}
