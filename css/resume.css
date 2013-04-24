@@ -1,6 +1,6 @@
 body{
 	background-color: #fafafa;
-	color: #444;
+	color: #000;
 }
 
 .resume{
@@ -20,10 +20,21 @@ body{
 		line-height: 2em;
 	}
 	.resume > section > article{
-		padding: 1em;
+		padding: 15px;
 		border-left: 10px solid #eee;
 	}
-
+	.resume > section > article > h2{
+		font-size: 1.5em;
+		background-color: #fafafa;
+		display: inline-block;
+		padding-left: 20px;
+		padding-right: 10px;
+		margin-left: -15px;
+		border-radius: 0 5px 5px 0;
+		border:2px solid #fafafa;
+		border-left: none;
+		text-transform: uppercase;
+	}
 .hero{
 }
 	.hero .photo{
@@ -69,13 +80,18 @@ body{
 	.summary > article{
 		border-left-color: #E3AAD6 !important;
 	}
-	.summary h2{
+	.summary > article > h2{
 		color: #E3AAD6;
+		border-color:#E3AAD6 !important;
+	}
+	.summary p{
+		font-size: 1.1em;
 	}
 .technologies{
 }
 	.technologies h2{
 		color: #93DFB8;
+		border-color:#93DFB8 !important;
 	}
 	.technologies > article{
 		border-left-color: #93DFB8 !important;
@@ -85,7 +101,7 @@ body{
 		margin: 0;
 	}
 		.technologies .skill{
-			font: 1.1em Consolas;
+			font: 1em Verdana;
 			font-weight: normal;
 			display: inline-block;
 			margin: .4em .2em;
@@ -93,7 +109,7 @@ body{
 			background-color: #fafafa;
 			border: 1px solid #eee;
 			border-radius: .2em;
-			color: #888;
+			color: #333;
 			box-shadow: 0 0 2px #eee;
 			cursor: default;
 		}
@@ -105,6 +121,7 @@ body{
 }
 	.experiences h2{
 		color: #B5D8EB;
+		border-color:#B5D8EB !important;
 	}
 	.experiences > article{
 		border-left-color: #B5D8EB !important;
