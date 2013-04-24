@@ -118,16 +118,16 @@ body{
 			display: inline-block;
 			width: 80px;
 			font-size: 1.2em;
-			background-color: #fafafa;
-			border:1px solid #eee;
+			background-color: #FCFEF5;
+			border:1px solid #E9FFE1;
 			border-radius: 5px;
 			position: relative;
 			margin-right: 30px;
 			padding: 5px;
-			color: #ddd;
+			color: #93DFB8;
 		}
 			.technologies label i{
-				color: #eee;
+				color: #E9FFE1;
 				position: absolute;
 				right: -20px;
 				font-size: 1.2em;
