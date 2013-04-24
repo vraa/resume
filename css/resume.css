@@ -34,7 +34,13 @@ body{
 		border:2px solid #fafafa;
 		border-left: none;
 		text-transform: uppercase;
+		position: relative;
 	}
+		.resume > section > article > h2 > i{
+			font-size: 2em;
+			position: absolute;
+			left: -70px;
+		}
 .hero{
 }
 	.hero .photo{
