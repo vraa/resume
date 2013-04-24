@@ -106,14 +106,39 @@ body{
 		list-style: none;
 		margin: 0;
 	}
+		.technologies > article > ul > li{
+			display: block;
+			margin: .5em 0;
+			padding: .5em;
+		}
+		.technologies ul.group{
+			display: inline-block;
+		}
+		.technologies label{
+			display: inline-block;
+			width: 80px;
+			font-size: 1.2em;
+			background-color: #fafafa;
+			border:1px solid #eee;
+			border-radius: 5px;
+			position: relative;
+			margin-right: 30px;
+			padding: 5px;
+			color: #ddd;
+		}
+			.technologies label i{
+				color: #eee;
+				position: absolute;
+				right: -20px;
+				font-size: 1.2em;
+			}
 		.technologies .skill{
 			font: 1em Verdana;
 			font-weight: normal;
 			display: inline-block;
 			margin: .4em .2em;
 			padding: .4em;
-			background-color: #fafafa;
-			border: 1px solid #eee;
+			border: 1px solid #93DFB8;
 			border-radius: .2em;
 			color: #333;
 			box-shadow: 0 0 2px #eee;
@@ -121,35 +146,35 @@ body{
 		}
 			.skill{
 				background-repeat: no-repeat;
-				background-position: 2px center;
+				background-position: 3px center;
 			}
 			.skill.java{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=java.com);
-				padding-left: 20px !important;
+				padding-left: 22px !important;
 			}
 			.skill.spring{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=springsource.org);
-				padding-left: 20px !important;
+				padding-left: 22px !important;
 			}
 			.skill.git{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=git-scm.com);
-				padding-left: 20px !important;
+				padding-left: 22px !important;
 			}
 			.skill.mysql{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=mysql.com);
-				padding-left: 20px !important;
+				padding-left: 22px !important;
 			}
 			.skill.mongo{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=mongodb.org);
-				padding-left: 20px !important;
+				padding-left: 22px !important;
 			}
 			.skill.html5{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=html5rocks.com);
-				padding-left: 20px !important;
+				padding-left: 22px !important;
 			}
 			.skill.jquery{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=jquery.com);
-				padding-left: 20px !important;
+				padding-left: 22px !important;
 			}
 .experiences{
 }
