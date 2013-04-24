@@ -119,9 +119,37 @@ body{
 			box-shadow: 0 0 2px #eee;
 			cursor: default;
 		}
-			.technologies .skill:hover, .technologies .skill:focus{
-				background-color: #fff;
-				border-color: #93DFB8;
+			.skill{
+				background-repeat: no-repeat;
+				background-position: 2px center;
+			}
+			.skill.java{
+				background-image:url(http://www.google.com/s2/u/0/favicons?domain=java.com);
+				padding-left: 20px !important;
+			}
+			.skill.spring{
+				background-image:url(http://www.google.com/s2/u/0/favicons?domain=springsource.org);
+				padding-left: 20px !important;
+			}
+			.skill.git{
+				background-image:url(http://www.google.com/s2/u/0/favicons?domain=git-scm.com);
+				padding-left: 20px !important;
+			}
+			.skill.mysql{
+				background-image:url(http://www.google.com/s2/u/0/favicons?domain=mysql.com);
+				padding-left: 20px !important;
+			}
+			.skill.mongo{
+				background-image:url(http://www.google.com/s2/u/0/favicons?domain=mongodb.org);
+				padding-left: 20px !important;
+			}
+			.skill.html5{
+				background-image:url(http://www.google.com/s2/u/0/favicons?domain=html5rocks.com);
+				padding-left: 20px !important;
+			}
+			.skill.jquery{
+				background-image:url(http://www.google.com/s2/u/0/favicons?domain=jquery.com);
+				padding-left: 20px !important;
 			}
 .experiences{
 }
