@@ -7,31 +7,30 @@ body{
 	font:1em Arial;
 	color: #333;
 	background-color: #fff;
-	border: 1px solid #eee;
+	border: 1px solid #ccc;
 	border-radius: 5px;
 	box-shadow: 0 0 10px #eee;
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
 	.resume > section{
-		border-bottom: 1px solid #eee;
+		border-bottom: 1px solid #ccc;
 	}
+		.resume > section:hover{
+			background-color: #ffffcf;
+		}
 	.resume p{
 		line-height: 2em;
 	}
 	.resume > section > article{
 		padding: 15px;
-		border-left: 10px solid #eee;
 	}
 	.resume > section > article > h2{
 		font-size: 1.5em;
-		background-color: #fafafa;
 		display: inline-block;
 		padding-left: 20px;
 		padding-right: 10px;
 		margin-left: -15px;
-		border-radius: 0 5px 5px 0;
-		border:2px solid #fafafa;
 		border-left: none;
 		text-transform: uppercase;
 		position: relative;
@@ -43,21 +42,21 @@ body{
 		}
 .hero{
 }
-	.hero .photo{
-	}
-		.hero .photo img{
-			margin: 2em;
-			border-radius: 10em;
-		}
 	.hero .name{
-		padding: 1em;
+		padding: 0 2em;
 	}
 		.hero .name h1{
-			font-size: 3em;
+			font-size: 2em;
+		}
+		.hero .note{
+			font-size: 1em;
+		}
+		.hero address{
+			margin: 0;
 		}
 	.contact{
 		padding: 1em;
-		border-left: 1px solid #eee;
+		border-left: 1px solid #ccc;
 	}
 		.contact h2{
 			display: none;
@@ -84,23 +83,18 @@ body{
 .summary{
 }
 	.summary > article{
-		border-left-color: #E3AAD6 !important;
 	}
 	.summary > article > h2{
-		color: #E3AAD6;
-		border-color:#E3AAD6 !important;
 	}
 	.summary p{
 		font-size: 1.1em;
+		padding-left: 1em;
 	}
 .technologies{
 }
 	.technologies h2{
-		color: #93DFB8;
-		border-color:#93DFB8 !important;
 	}
 	.technologies > article{
-		border-left-color: #93DFB8 !important;
 	}
 	.technologies ul{
 		list-style: none;
@@ -118,27 +112,20 @@ body{
 			display: inline-block;
 			width: 80px;
 			font-size: 1.2em;
-			background-color: #FCFEF5;
-			border:1px solid #E9FFE1;
 			border-radius: 5px;
 			position: relative;
-			margin-right: 30px;
+			margin-right: 25px;
 			padding: 5px;
-			color: #93DFB8;
+			text-align: right;
+			font-weight: bold;
 		}
-			.technologies label i{
-				color: #E9FFE1;
-				position: absolute;
-				right: -20px;
-				font-size: 1.2em;
-			}
 		.technologies .skill{
 			font: 1em Verdana;
 			font-weight: normal;
 			display: inline-block;
 			margin: .4em .2em;
 			padding: .4em;
-			border: 1px solid #93DFB8;
+			border: 1px solid #ddd;
 			border-radius: .2em;
 			color: #333;
 			box-shadow: 0 0 2px #eee;
@@ -179,11 +166,8 @@ body{
 .experiences{
 }
 	.experiences h2{
-		color: #B5D8EB;
-		border-color:#B5D8EB !important;
 	}
 	.experiences > article{
-		border-left-color: #B5D8EB !important;
 	}
 	.experiences ol{
 		list-style: disc;
