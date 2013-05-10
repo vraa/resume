@@ -164,39 +164,92 @@ body{
 				padding-left: 22px !important;
 			}
 .experiences{
+	position: relative;
 }
-	.experiences h2{
-	}
-	.experiences > article{
+	.experiences .timeline{
+		position: relative;
+		height: 125px;
+		width: 100%;
+		margin-top: 100px;
 	}
 	.experiences ol{
-		list-style: disc;
+		list-style: none;
+		display: block;
+		width: 700px;
+		border-bottom: 5px solid #eee;
+		margin: 0;
+		padding: 0;	
 	}
 	.experiences .experience{
-		margin: 1em 0;
-		font-size: 1.2em;
+		display: inline-block;
+		position: absolute;
+		height: 100px;
+		padding-left: 20px;
+		width: 200px;
 	}
-	.experience .summary:after{
-		content: '@';
-		padding: 0 .5em;
-		color: #999;
-	}
-	.experience .location{
-		font-style: italic;
-	}
-		.experience .location a{
+		.experiences .experience .location{
+			background-repeat: no-repeat;
+			background-position: center left;
+			padding-left: 30px;
+			margin-top: 10px;
+			font-size: 1.5em;
+			display: block;
+			text-align: left;
+		}
+		.experiences .experience .summary{
+			display: block;
+			font-weight: bold;
+			margin-top: 10px;
+			font-size: 1.1em;
+		}
+		.experiences .experience .time{
+			display: block;
+		}
+		.experiences .experience .dtstart, .experiences .experience .dtend{
+			position: absolute;
+			font-size: .9em;
 			color: #999;
 		}
-	.experience .time{
-		color: #999;
+			.experience .dtstart{
+				bottom: 10px;
+				right: 10px;
+			}
+			.experience .dtend{
+				left: 10px;
+				bottom: 10px;
+			}
+	.experience.paypal{
+		top: -100px;
+		left: 0;
+		border: 1px solid #15477C;
+		border-radius: 10px 10px 0 0;
+		border-bottom: 4px solid #15477C;
+		background-color: #EFF7FF;
 	}
-		.experience .time .dtstart:before{
-			content: 'from';
-			padding:0 .5em;
+		.paypal .location{
+			background-image:url(http://www.google.com/s2/u/0/favicons?domain=paypal.com);
 		}
-		.experience .time .dtstart:after{
-			content: 'to';
-			padding:0 .5em;
+	.experience.csc{
+		left: 260px;
+		border: 1px solid #ED2424;
+		border-top: 4px solid #ED2424;
+		padding-top: 10px;
+		border-radius: 0 0 10px 10px;
+		background-color: #FFEFEF;
+	}
+		.csc .location{
+			background-image:url(http://www.google.com/s2/u/0/favicons?domain=csc.com);
+		}
+	.experience.infy{
+		top: -100px;
+		left: 480px;
+		border: 1px solid #3781C2;
+		border-bottom: 4px solid #3781C2;
+		border-radius: 10px 10px 0 0;
+		background-color: #EFF8FF;
+	}
+		.infy .location{
+			background-image:url(http://www.google.com/s2/u/0/favicons?domain=infosys.com);
 		}
 .meta{
 	font-size: .8em;
