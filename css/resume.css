@@ -1,24 +1,22 @@
 body{
-	background-color: #fafafa;
+	background-color: #F0F7FC;
 	color: #000;
+	font-family: 'Orienta', sans-serif;
 }
 
 .resume{
-	font:1em Arial;
+	font-family: 'Orienta', sans-serif;
 	color: #333;
 	background-color: #fff;
-	border: 1px solid #ccc;
+	border: 1px solid #CCDFF0;
 	border-radius: 5px;
 	box-shadow: 0 0 10px #eee;
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
 	.resume > section{
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid #CCDFF0;
 	}
-		.resume > section:hover{
-			background-color: #ffffcf;
-		}
 	.resume p{
 		line-height: 2em;
 	}
@@ -39,7 +37,24 @@ body{
 			font-size: 2em;
 			position: absolute;
 			left: -70px;
+			color: #CCDFF0;
 		}
+.alert{
+	font-size: .9em;
+	margin:1em;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	padding: .5em;
+}
+	.alert p:last-child{
+		margin: 0;
+		padding: 0;
+	}
+	.alert-info{
+		background-color: #d9edf7;
+		border-color: #bce8f1;
+		color: #3a87ad;
+	}
 .hero{
 }
 	.hero .name{
@@ -56,7 +71,7 @@ body{
 		}
 	.contact{
 		padding: 1em;
-		border-left: 1px solid #ccc;
+		border-left: 1px solid #CCDFF0;
 	}
 		.contact h2{
 			display: none;
@@ -90,6 +105,9 @@ body{
 		font-size: 1.1em;
 		padding-left: 1em;
 	}
+	.summary li{
+		margin-bottom: 1em;
+	}
 .technologies{
 }
 	.technologies h2{
@@ -111,22 +129,22 @@ body{
 		.technologies label{
 			display: inline-block;
 			width: 80px;
-			font-size: 1.2em;
+			font-size: 1em;
 			border-radius: 5px;
 			position: relative;
 			margin-right: 25px;
 			padding: 5px;
 			text-align: right;
 			font-weight: bold;
+			display: none;
 		}
 		.technologies .skill{
-			font: 1em Verdana;
 			font-weight: normal;
 			display: inline-block;
 			margin: .4em .2em;
 			padding: .4em;
-			border: 1px solid #ddd;
-			border-radius: .2em;
+			border: 1px solid #CCDFF0;
+			border-radius: .5em;
 			color: #333;
 			box-shadow: 0 0 2px #eee;
 			cursor: default;
@@ -161,6 +179,14 @@ body{
 			}
 			.skill.jquery{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=jquery.com);
+				padding-left: 22px !important;
+			}
+			.skill.raphael{
+				background-image:url(http://www.google.com/s2/u/0/favicons?domain=raphaeljs.com);
+				padding-left: 22px !important;
+			}
+			.skill.requirejs{
+				background-image:url(http://www.google.com/s2/u/0/favicons?domain=requirejs.org);
 				padding-left: 22px !important;
 			}
 .experiences{
@@ -200,7 +226,7 @@ body{
 			display: block;
 			font-weight: bold;
 			margin-top: 10px;
-			font-size: 1.1em;
+			font-size: .91em;
 		}
 		.experiences .experience .time{
 			display: block;
@@ -251,6 +277,39 @@ body{
 		.infy .location{
 			background-image:url(http://www.google.com/s2/u/0/favicons?domain=infosys.com);
 		}
+
+table{
+	border: 1px solid #CCDFF0;
+	padding: .5em;
+	border-radius: 5px;
+	width: 100%;
+}
+	table thead{
+		background-color: #F0F7FC;
+		border-bottom: 1px solid #ccc;
+	}
+	table th{
+		text-align: left;
+		padding: 1em;
+	}
+	table td{
+		vertical-align: top;
+		padding: 1em;
+	}
+	table tr:nth-child(even){
+		background-color: #fafafa;
+	}
+	table tbody tr td:nth-child(1) span{
+		background-color: #F0F7FC;
+		padding:.51em .91em;
+		border-radius: 100px;
+		border: 1px solid #CCDFF0;
+	}
+
+.official-projects{
+
+}
+
 .meta{
 	font-size: .8em;
 	color: #aaa;
