@@ -120,9 +120,6 @@ body{
 			margin: .5em 0;
 			padding: .5em;
 		}
-		.technologies ul.group{
-			display: inline-block;
-		}
 		.technologies label{
 			display: inline-block;
 			width: 80px;
@@ -150,6 +147,26 @@ body{
 				background-repeat: no-repeat;
 				background-position: 3px center;
 			}
+				.skill[data-rating='5']{
+					font-size: 1.5em;
+					border-color: #95a5a6;
+				}
+				.skill[data-rating='4']{
+					font-size: 1.2em;
+					border-color: #bdc3c7;
+				}
+				.skill[data-rating='3']{
+					font-size: 1em;
+					border-color: #ecf0f1;
+				}
+				.skill[data-rating='2']{
+					font-size: .9em;
+					border-color: #ecf0f1;
+				}
+				.skill[data-rating='1']{
+					font-size: .8em;
+					border-color: #ecf0f1;
+				}
 			.skill.java{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=java.com);
 				padding-left: 22px !important;
