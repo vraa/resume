@@ -93,6 +93,9 @@ body{
 					opacity: .5;
 					margin-right: .5em;
 				}
+			.contact .mobile + a .country-code{
+				color: #888;
+			}
 .summary{
 }
 	.summary > article{
@@ -311,7 +314,7 @@ table{
 		padding: 1em;
 	}
 	table tr:nth-child(even){
-		background-color: #fafafa;
+		background-color: #f5f5f5;
 	}
 	table tbody tr td:nth-child(1) span{
 		background-color: #F0F7FC;
