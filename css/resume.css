@@ -12,6 +12,7 @@ body{
 	box-shadow: 0 0 10px #eee;
 	margin-top: 2em;
 	margin-bottom: 2em;
+	padding:0 15px;
 }
 	.resume > section{
 		border-bottom: 1px solid #CCDFF0;
