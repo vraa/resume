@@ -1,8 +1,16 @@
 body{
-	background-color: #fff;
+	background-color: #d8edf3;
 	color: #000;
 }
-
+nav.navbar{
+	background-color: #68b4ca;
+	opacity: .8;
+	box-shadow: none;
+	border: none;
+}
+	nav.navbar.navbar-default .navbar-nav li a{
+		color:#fff;
+	}
 .resume-wrap{
 	padding:70px 0 0 0;
 	position: relative;
@@ -12,8 +20,9 @@ body{
 	font-family: Arial, sans-serif;
 	color: #555;
 	background-color: #fff;
-	padding: 0 15px;
+	padding: 0 35px;
 	z-index: 20;
+	box-shadow: 0 0 5px #aaa;
 }
 	.resume > section{
 	}
@@ -27,7 +36,7 @@ body{
 		font-size: 2rem;
 		font-weight: bold;
 		display: block;
-		text-align: center;
+		color: #000;
 	}
 .alert{
 	font-size: .9em;
@@ -222,7 +231,7 @@ body{
 	position: relative;
 	width: 100%;
 	background-color: #fff;
-	height: 300px;
+	height: 400px;
 }
 	.timeline .line{
 		position: absolute;
@@ -268,7 +277,7 @@ body{
 		position: absolute;
 		width: 60px;
 		height: 2px;
-		background-color: #000;
+		background-color: #eee;
 		top: 50%;
 
 		-moz-transform:translateY(-50%);
@@ -291,7 +300,7 @@ body{
 		.timeline .events li:nth-child(odd) .hand:after{
 			border-top:5px solid transparent;
 			border-bottom:5px solid transparent;
-			border-right: 10px solid #f00;
+			border-right: 10px solid #aaa;
 			left: -2px;
 		}
 	.timeline .events li:nth-child(even) .hand{
@@ -301,11 +310,10 @@ body{
 			right: -2px;
 			border-top:5px solid transparent;
 			border-bottom:5px solid transparent;
-			border-left: 10px solid #f00;
+			border-left: 10px solid #aaa;
 		}
 	.timeline .events li .data{
 		text-align: center;
-		border: 1px solid #eee;
 		padding:10px 20px;
 	}
 		.timeline .events li:nth-child(odd) .data{
@@ -313,6 +321,33 @@ body{
 		}
 		.timeline .events li:nth-child(even) .data{
 			margin-right: 60px;
+		}
+.experience{
+
+}
+	.experience .location{
+		display: block;
+		font: 1.3em Georgia, Serif;
+	}
+		.experience .location a{
+			color: #000;
+			border-bottom: 1px dashed;
+		}
+			.experience .location a:hover{
+				text-decoration: none;
+			}
+	.experience .summary{
+		display: block;
+		font: 1em Arial, sans-serif;
+		margin: 10px 0;
+	}
+	.experience .time{
+		display: block;
+		font: .8em Arial, sans-serif;
+		color: #999;
+	}
+		.experience .time .dtstart:after{
+			content: " -";
 		}
 
 /* Phone */
