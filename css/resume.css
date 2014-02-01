@@ -1,21 +1,21 @@
 body{
-	background-color: #F0F7FC;
+	background-color: #fff;
 	color: #000;
 }
 
+.resume-wrap{
+	padding:70px 0 0 0;
+	position: relative;
+}
+
 .resume{
-	font-family: 'Orienta', sans-serif;
+	font-family: Arial, sans-serif;
 	color: #555;
 	background-color: #fff;
-	border: 1px solid #CCDFF0;
-	border-radius: 5px;
-	box-shadow: 0 0 10px #eee;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	padding:0 15px;
+	padding: 0 15px;
+	z-index: 20;
 }
 	.resume > section{
-		border-bottom: 1px solid #CCDFF0;
 	}
 	.resume p{
 		line-height: 2em;
@@ -24,20 +24,11 @@ body{
 		padding: 2rem;
 	}
 	.resume > section > article > h2{
-		font: 1.5em 'Alegreya', serif;;
-		display: inline-block;
-		padding-left: 10px;
-		padding-right: 10px;
-		margin-left: -15px;
-		border-left: none;
-		position: relative;
+		font-size: 2rem;
+		font-weight: bold;
+		display: block;
+		text-align: center;
 	}
-		.resume > section > article > h2 > i{
-			font-size: 2em;
-			position: absolute;
-			left: -70px;
-			color: #CCDFF0;
-		}
 .alert{
 	font-size: .9em;
 	margin:1em;
@@ -57,10 +48,11 @@ body{
 .hero{
 }
 	.hero .name{
-		padding: 0 2em;
 	}
 		.hero .name h1{
-			font: 2em 'Alegreya', serif;;
+			font: 3rem Arial;
+			font-weight: bold;
+			text-align: center;
 		}
 		.hero .note{
 			font-size: 1em;
@@ -69,14 +61,16 @@ body{
 			margin: 0;
 		}
 	.contact{
-		padding: 1em;
-		border-left: 1px solid #CCDFF0;
+		border-top: 1px solid #CCDFF0;
+		padding-top: 10px;
 	}
 		.contact h2{
 			display: none;
 		}
 		.contact ul{
 			list-style: none;
+			margin:0;
+			padding: 0;
 		}
 			.contact ul li{
 				display: block;
@@ -86,10 +80,17 @@ body{
 				color: #000;
 			}
 			.contact ul label{
+				font-size: 1rem;
 				display: inline-block;
-				width: 100px;
+				width: 70px;
 				color: #666;
+				text-transform: uppercase;
 			}
+				.contact ul label:after{
+					content: ':';
+					padding-left: 5px;
+					color:#aaa;
+				}
 				.contact ul label i{
 					opacity: .5;
 					margin-right: .5em;
@@ -118,26 +119,16 @@ body{
 	.technologies ul{
 		list-style: none;
 		margin: 0;
+		padding: 0;
 	}
 		.technologies > article > ul > li{
 			display: block;
 			margin: .5em 0;
 			padding: .5em;
 		}
-		.technologies label{
-			display: inline-block;
-			width: 80px;
-			font-size: 1em;
-			border-radius: 5px;
-			position: relative;
-			margin-right: 25px;
-			padding: 5px;
-			text-align: right;
-			font-weight: bold;
-			display: none;
-		}
 		.technologies .skill{
 			font-weight: normal;
+			font-size: 1rem;
 			display: inline-block;
 			margin: .4em .2em;
 			padding: .4em;
@@ -152,23 +143,23 @@ body{
 				background-position: 3px center;
 			}
 				.skill[data-rating='5']{
-					font-size: 1.5em;
+					font-size: 1.5rem;
 					border-color: #95a5a6;
 				}
 				.skill[data-rating='4']{
-					font-size: 1.2em;
+					font-size: 1.2rem;
 					border-color: #bdc3c7;
 				}
 				.skill[data-rating='3']{
-					font-size: 1em;
+					font-size: 1rem;
 					border-color: #ecf0f1;
 				}
 				.skill[data-rating='2']{
-					font-size: .9em;
+					font-size: .9rem;
 					border-color: #ecf0f1;
 				}
 				.skill[data-rating='1']{
-					font-size: .8em;
+					font-size: .8rem;
 					border-color: #ecf0f1;
 				}
 			.skill.java{
@@ -207,52 +198,46 @@ body{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=requirejs.org);
 				padding-left: 22px !important;
 			}
+			.skill.bootstrap{
+				background-image:url(http://www.google.com/s2/u/0/favicons?domain=getbootstrap.com);
+				padding-left: 22px !important;
+			}
 .experiences{
 	position: relative;
 }
+	.resume section.experiences article{
+		padding-left: 0;
+		padding-right: 0;
+	}
 	.experiences .timeline{
-		position: relative;
-		height: 125px;
-		width: 100%;
-		margin-top: 100px;
 	}
 	.experiences ol{
-		list-style: none;
-		display: block;
-		width: 700px;
-		border-bottom: 5px solid #eee;
 		margin: 0;
-		padding: 0;	
+		padding: 0;
+		list-style: none;
 	}
 	.experiences .experience{
-		display: inline-block;
-		position: absolute;
-		height: 100px;
-		padding-left: 20px;
-		width: 200px;
+		padding: 10px;
+		font-size: 1.3rem;
 	}
+		.experiences .experience:nth-child(odd){
+			background-color: #eee;
+		}
 		.experiences .experience .location{
-			background-repeat: no-repeat;
-			background-position: center left;
-			padding-left: 30px;
-			margin-top: 10px;
-			font-size: 1.5em;
-			display: block;
-			text-align: left;
+			
+		}
+		.experiences .experience .location a{
+			color: #000;
 		}
 		.experiences .experience .summary{
-			display: block;
 			font-weight: bold;
-			margin-top: 10px;
-			font-size: .91em;
 		}
 		.experiences .experience .time{
 			display: block;
+			font-size: 1rem;
+			color: #666;
 		}
 		.experiences .experience .dtstart, .experiences .experience .dtend{
-			position: absolute;
-			font-size: .9em;
-			color: #999;
 		}
 			.experience .dtstart{
 				bottom: 10px;
@@ -263,37 +248,16 @@ body{
 				bottom: 10px;
 			}
 	.experience.paypal{
-		top: -100px;
-		left: 0;
-		border: 1px solid #15477C;
-		border-radius: 10px 10px 0 0;
-		border-bottom: 4px solid #15477C;
-		background-color: #EFF7FF;
 	}
 		.paypal .location{
-			background-image:url(http://www.google.com/s2/u/0/favicons?domain=paypal.com);
 		}
 	.experience.csc{
-		left: 260px;
-		border: 1px solid #ED2424;
-		border-top: 4px solid #ED2424;
-		padding-top: 10px;
-		border-radius: 0 0 10px 10px;
-		background-color: #FFEFEF;
 	}
 		.csc .location{
-			background-image:url(http://www.google.com/s2/u/0/favicons?domain=csc.com);
 		}
 	.experience.infy{
-		top: -100px;
-		left: 480px;
-		border: 1px solid #3781C2;
-		border-bottom: 4px solid #3781C2;
-		border-radius: 10px 10px 0 0;
-		background-color: #EFF8FF;
 	}
 		.infy .location{
-			background-image:url(http://www.google.com/s2/u/0/favicons?domain=infosys.com);
 		}
 
 table{
@@ -331,4 +295,26 @@ table{
 .meta{
 	font-size: .8em;
 	color: #aaa;
+}
+
+/* Phone */
+@media (max-width: 480px){
+
+
+
+}
+
+/* Tablet */
+@media (min-width: 768px){
+
+}
+
+/* Desktop */
+@media (min-width: 992px){
+
+}
+
+/* Largde desktop */
+@media (min-width: 1200px){
+
 }

@@ -16,16 +16,17 @@
 	  <link rel="profile" href="http://microformats.org/profile/hcalendar" />
 	  <link rel="profile" href="http://microformats.org/profile/hresume" />
 
-
+	  <!--
 		<link href='http://fonts.googleapis.com/css?family=Orienta' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Alegreya:700' rel='stylesheet' type='text/css'>
+		-->
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 		<link type="text/css" rel="stylesheet" href="css/resume.css" />
 
 	</head>
 
 	<body>
-		<nav class="navbar navbar-default" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#resume-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -42,13 +43,12 @@
 				</ul>
 			</div>
 		</nav>
-		
 		<div class='container'>
 			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2">
+				<div class="col-xs-12 col-lg-8 col-lg-offset-2 resume-wrap">
 					<article class="resume hresume">
 						<!-- Name and Contact -->
-						<section class="row">
+						<section class="row hero">
 							<div class="col-xs-12 col-md-6">
 								<div class='name'>
 									<address class='vcard'>
@@ -57,7 +57,7 @@
 										</h1>
 									</address>
 									<p class='note'>
-										Senior web developer with 6.5+ years of experience. Founded open source projects <a href="http://countrack.me" title="A mobile/web app to track habits">Countrack.me</a>, <a href="http://timethetask.appspot.com" title="A web app to track tasks.">timethetask</a>, <a href="http://twikural.veerasundar.com" title="A non-profit local web site that shares two 'Thirukural' everyday">twikural</a> &amp; <a href="http://timelinebuilder.appspot.com" title="Simple timeline builder">timelinebuilder</a>. Active <a href="http://veerasundar.com/blog">Blogger</a>.
+										Senior web developer with 7+ years of experience. Founded open source projects <a href="http://countrack.me" title="A mobile/web app to track habits">countrack.me</a>, <a href="http://timethetask.appspot.com" title="A web app to track tasks.">timethetask</a>, <a href="http://twikural.veerasundar.com" title="A non-profit local web site that shares two 'Thirukural' everyday">twikural</a> &amp; <a href="http://timelinebuilder.appspot.com" title="Simple timeline builder">timelinebuilder</a>. Active <a href="http://veerasundar.com/blog">Blogger</a>.
 									</p>
 								</div>
 							</div>
@@ -89,7 +89,7 @@
 						<section class='objective row'>
 							<article class='col-xs-12'>
 								<h2><i class='icon-upload'></i> Objective</h2>
-								<p>To obtain a Senior Developer position that provides me challenging projects to develop modern web applications using JavaScript &amp; Java.</p>
+								<p>To obtain a Senior Developer position that provides me challenging projects to develop modern web applications.</p>
 							</article>
 						</section>
 
@@ -133,32 +133,32 @@
 								<div class='timeline'>
 									<ol class='vcalendar'>
 										<li class='experience vevent thoughtworks'>
-											<span class='summary'>UI Developer</span>
-											<span class='location'><a href="https://www.thoughtworks.com">ThoguhtWorks</a> - 4ms</span>
+											<span class='summary'>UI Developer</span> at
+											<span class='location'><a href="https://www.thoughtworks.com">ThoguhtWorks</a></span>
 											<span class='time'>
 												<span class='dtstart' title='October 2012'>October 2013</span>
 												<span class='dtend' title='Present'>Present</span>
 											</span>
 										</li>
 										<li class='experience vevent paypal'>
-											<span class='summary'>Senior Software Engineer</span>
-											<span class='location'><a href="https://www.paypal.com">PayPal</a> - 1yr 3ms</span>
+											<span class='summary'>Senior Software Engineer</span> at
+											<span class='location'><a href="https://www.paypal.com">PayPal</a></span>
 											<span class='time'>
 												<span class='dtstart' title='June 2012'>June 2012</span>
 												<span class='dtend' title='September 2013'>September 2013</span>
 											</span>
 										</li>
 										<li class='experience vevent csc'>
-											<span class='summary'>Software Engineer (for PayPal)</span>
-											<span class='location'><a href="http://www.csc.com/">CSC</a> - 1yr 11ms</span>
+											<span class='summary'>Software Engineer (for PayPal)</span> at
+											<span class='location'><a href="http://www.csc.com/">CSC</a></span>
 											<span class='time'>
 												<span class='dtstart' title="March 2010">March 2010</span>
 												<span class='dtend' title="February 2012">February 2012</span>
 											</span>
 										</li>
 										<li class='experience vevent infy'>
-											<span class='summary'>Technology Analyst</span>
-											<span class='location'><a href="http://www.infosys.com">Infosys</a> - 3yr 7ms</span>
+											<span class='summary'>Technology Analyst</span> at
+											<span class='location'><a href="http://www.infosys.com">Infosys</a></span>
 											<span class='time'>
 												<span class='dtstart' title="March 2010">July 2006</span>
 												<span class='dtend' title="February 2012">February 2010</span>
@@ -194,41 +194,43 @@
 							<article class='col-xs-12'>
 								<h2><i class='icon-beaker'></i> Official Projects</h2>
 								<p>Following are the list of projects that I was part of at my current employer.</p>
-								<table>
-									<thead>
-										<th>#</th>
-										<th>Name</th>
-										<th>Employer</th>
-										<th>My Role</th>
-									</thead>
-									<tbody>
-										<tr>
-											<td><span>1</span></td>
-											<td>Express Checkout</td>
-											<td>PayPal</td>
-											<td><p>I was part of the team that ported a legacy C++ Checkout application to Java Platform. My role was to implement incremental feature sets for every sprints from back to front using Java &amp; JavaScript.</p>
-											<p><strong>Technologies used:</strong> Java, Spring, JSP, JavaScript, JQuery, AJAX, HTML5 &amp; CSS3.</p></td>
-										</tr>
-										<tr>
-											<td><span>2</span></td>
-											<td>Checkout Application Framework</td>
-											<td>PayPal</td>
-											<td>
-												<p>My role was to maintain this framework, merge different feature tracks to master and relase new versions of the framework, run Sonar on code base and improve code quality.</p>
-												<p><strong>Technologies used:</strong> Java, Spring, JSP, Git, Sonar, Maven.</p>
-											</td>
-										</tr>
-										<tr>
-											<td><span>3</span></td>
-											<td>Log Formatter</td>
-											<td>PayPal</td>
-											<td>
-												<p>Internal tool to convert RAW log data to presentable, interactive format. Built it as a bookmarklet.</p>
-												<p><strong>Technologies used:</strong> JavaScript, requireJS, AMD, Backbone, Raphael, Bootstrap.</p>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<th>#</th>
+											<th>Name</th>
+											<th>Employer</th>
+											<th>My Role</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td><span>1</span></td>
+												<td>Express Checkout</td>
+												<td>PayPal</td>
+												<td><p>I was part of the team that ported a legacy C++ Checkout application to Java Platform. My role was to implement incremental feature sets for every sprints from back to front using Java &amp; JavaScript.</p>
+												<p><strong>Technologies used:</strong> Java, Spring, JSP, JavaScript, JQuery, AJAX, HTML5 &amp; CSS3.</p></td>
+											</tr>
+											<tr>
+												<td><span>2</span></td>
+												<td>Checkout Application Framework</td>
+												<td>PayPal</td>
+												<td>
+													<p>My role was to maintain this framework, merge different feature tracks to master and relase new versions of the framework, run Sonar on code base and improve code quality.</p>
+													<p><strong>Technologies used:</strong> Java, Spring, JSP, Git, Sonar, Maven.</p>
+												</td>
+											</tr>
+											<tr>
+												<td><span>3</span></td>
+												<td>Log Formatter</td>
+												<td>PayPal</td>
+												<td>
+													<p>Internal tool to convert RAW log data to presentable, interactive format. Built it as a bookmarklet.</p>
+													<p><strong>Technologies used:</strong> JavaScript, requireJS, AMD, Backbone, Raphael, Bootstrap.</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 								<div class='alert alert-info'>
 									<p><strong><i class='icon-info-sign'></i> Note:</strong> If you would like to know about my complete projects history (including all my previous employers), please let me know and I can provide the details.</p>
 								</div>
@@ -241,45 +243,46 @@
 							<article class='col-xs-12'>
 								<h2><i class='icon-coffee'></i> Personal Projects</h2>
 								<p>Following are the list of side projects that I worked on during weekends / free time.</p>
-
-								<table>
-									<thead>
-										<th>#</th>
-										<th>Name</th>
-										<th>Notes</th>
-									</thead>
-									<tbody>
-										<tr>
-											<td><span>1</span></td>
-											<td><a href="http://countrack.me">Countrack.me</a></td>
-											<td><p>An offline enabled mobile/web app that helps the user to build good habits by keeping track of their activities.</p>
-											<p><strong>Technologies used:</strong> JavaScript, JQuery, Backbone, Browser Local Storage, Firebase API.</p></td>
-										</tr>
-										<tr>
-											<td><span>2</span></td>
-											<td><a href="http://timethetask.appspot.com">timethetask</a></td>
-											<td><p>A web application to manage tasks and track task timings. My role is to develop the product end to end, test, maintain and spread the word.</p>
-											<p><strong>Technologies used:</strong> Java, Servlets, JSP, JavaScript, JQuery, JQuery UI, AJAX, HTML5 & CSS3, App Engine.</p></td>
-										</tr>
-										<tr>
-											<td><span>3</span></td>
-											<td><a href="http://twikural.veerasundar.com">Twikural</a></td>
-											<td>
-												<p>A not for profit site that sends two 'Thirukural' couplets everyday to its subscribers. My role was to source the data, feed into the data store, implement web application that automatically posts two couplets every day.</p>
-												<p>You can read my blog post about <a href="http://veerasundar.com/blog/2012/08/twikural-how-it-works/">how Twikural works</a> for more information.</p>
-												<p><strong>Technologies used:</strong> Java, Servlets, JSP, HTML5, CSS3, JavaScript, Bootstrap, App Engine.</p>
-											</td>
-										</tr>
-										<tr>
-											<td><span>4</span></td>
-											<td><a href="http://timelinebuilder.appspot.com">timelinebuilder</a></td>
-											<td>
-												<p>Simple timeline maker, developed to explore the HTML5's offline storage capability.</p>
-												<p><strong>Technologies used:</strong> JavaScript, Backbone, Bootstrap, HTML5, CSS3, Browser Local Storage.</p>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<th>#</th>
+											<th>Name</th>
+											<th>Notes</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td><span>1</span></td>
+												<td><a href="http://countrack.me">Countrack.me</a></td>
+												<td><p>An offline enabled mobile/web app that helps the user to build good habits by keeping track of their activities.</p>
+												<p><strong>Technologies used:</strong> JavaScript, JQuery, Backbone, Browser Local Storage, Firebase API.</p></td>
+											</tr>
+											<tr>
+												<td><span>2</span></td>
+												<td><a href="http://timethetask.appspot.com">timethetask</a></td>
+												<td><p>A web application to manage tasks and track task timings. My role is to develop the product end to end, test, maintain and spread the word.</p>
+												<p><strong>Technologies used:</strong> Java, Servlets, JSP, JavaScript, JQuery, JQuery UI, AJAX, HTML5 & CSS3, App Engine.</p></td>
+											</tr>
+											<tr>
+												<td><span>3</span></td>
+												<td><a href="http://twikural.veerasundar.com">Twikural</a></td>
+												<td>
+													<p>A not for profit site that sends two 'Thirukural' couplets everyday to its subscribers. My role was to source the data, feed into the data store, implement web application that automatically posts two couplets every day.</p>
+													<p>You can read my blog post about <a href="http://veerasundar.com/blog/2012/08/twikural-how-it-works/">how Twikural works</a> for more information.</p>
+													<p><strong>Technologies used:</strong> Java, Servlets, JSP, HTML5, CSS3, JavaScript, Bootstrap, App Engine.</p>
+												</td>
+											</tr>
+											<tr>
+												<td><span>4</span></td>
+												<td><a href="http://timelinebuilder.appspot.com">timelinebuilder</a></td>
+												<td>
+													<p>Simple timeline maker, developed to explore the HTML5's offline storage capability.</p>
+													<p><strong>Technologies used:</strong> JavaScript, Backbone, Bootstrap, HTML5, CSS3, Browser Local Storage.</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 								<div class='alert alert-info'>
 									<p><strong><i class='icon-info-sign'></i> Note:</strong> Here's a complete list of my side projects: <a href="https://github.com/vraa">https://github.com/vraa</a>.</p>
 								</div>
