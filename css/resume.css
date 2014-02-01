@@ -208,56 +208,6 @@ body{
 		padding-left: 0;
 		padding-right: 0;
 	}
-	.experiences .timeline{
-	}
-	.experiences ol{
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	.experiences .experience{
-		padding: 10px;
-		font-size: 1.3rem;
-	}
-		.experiences .experience:nth-child(odd){
-			background-color: #eee;
-		}
-		.experiences .experience .location{
-			
-		}
-		.experiences .experience .location a{
-			color: #000;
-		}
-		.experiences .experience .summary{
-			font-weight: bold;
-		}
-		.experiences .experience .time{
-			display: block;
-			font-size: 1rem;
-			color: #666;
-		}
-		.experiences .experience .dtstart, .experiences .experience .dtend{
-		}
-			.experience .dtstart{
-				bottom: 10px;
-				right: 10px;
-			}
-			.experience .dtend{
-				left: 10px;
-				bottom: 10px;
-			}
-	.experience.paypal{
-	}
-		.paypal .location{
-		}
-	.experience.csc{
-	}
-		.csc .location{
-		}
-	.experience.infy{
-	}
-		.infy .location{
-		}
 
 .official-projects{
 
