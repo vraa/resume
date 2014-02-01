@@ -1,9 +1,9 @@
 body{
-	background-color: #d8edf3;
+	background-color: #1a4b4c;
 	color: #000;
 }
 nav.navbar{
-	background-color: #68b4ca;
+	background-color: #0d2526;
 	opacity: .8;
 	box-shadow: none;
 	border: none;
@@ -17,12 +17,11 @@ nav.navbar{
 }
 
 .resume{
-	font-family: Arial, sans-serif;
-	color: #555;
+	font-family: Orienta, Arial, sans-serif;
+	color: #333;
 	background-color: #fff;
 	padding: 0 35px;
 	z-index: 20;
-	box-shadow: 0 0 5px #aaa;
 }
 	.resume > section{
 	}
@@ -33,10 +32,13 @@ nav.navbar{
 		padding: 2rem;
 	}
 	.resume > section > article > h2{
-		font-size: 2rem;
+		font: 2rem Alegreya, Georgia, Serif;
 		font-weight: bold;
 		display: block;
-		color: #000;
+		color: #0d2526;
+	}
+	.resume a{
+		color: #267173;
 	}
 .alert{
 	font-size: .9em;
@@ -59,7 +61,7 @@ nav.navbar{
 	.hero .name{
 	}
 		.hero .name h1{
-			font: 3rem Arial;
+			font: 3rem Alegreya, Georgia, Serif;
 			font-weight: bold;
 			text-align: center;
 		}
@@ -70,7 +72,9 @@ nav.navbar{
 			margin: 0;
 		}
 	.contact{
-		padding-top: 10px;
+		border-bottom: 1px solid #eaeaea;
+		border-radius: 2px;
+		margin-top: 2em;
 	}
 		.contact h2{
 			display: none;
@@ -79,32 +83,25 @@ nav.navbar{
 			list-style: none;
 			margin:0;
 			padding: 0;
+			width: 100%;
 		}
 			.contact ul li{
-				display: block;
-				padding: .4em;
+				display: inline-block;
+				padding: 5px 10px;
+				border-right: 1px solid #eaeaea;
 			}
+				.contact ul li:last-child{
+					border-right:none;
+				}
 			.contact li a, .contact li{
 				color: #000;
 			}
-			.contact ul label{
-				font-size: 1rem;
-				display: inline-block;
-				width: 70px;
-				color: #666;
-				text-transform: uppercase;
-			}
-				.contact ul label:after{
-					content: ':';
-					padding-left: 5px;
-					color:#aaa;
-				}
-				.contact ul label i{
-					opacity: .5;
-					margin-right: .5em;
-				}
 			.contact .mobile + a .country-code{
 				color: #888;
+			}
+			.contact ul li i{
+				color: #888;
+				font-size: .8em;
 			}
 .summary{
 }
@@ -213,10 +210,6 @@ nav.navbar{
 .experiences{
 	position: relative;
 }
-	.resume section.experiences article{
-		padding-left: 0;
-		padding-right: 0;
-	}
 
 .official-projects{
 
@@ -237,7 +230,7 @@ nav.navbar{
 		position: absolute;
 		height: 90%;
 		width: 5px;
-		background-color: #ddd;
+		background-color: #267173;
 		left: 50%;
 		top: 50%;
 		-moz-transform:translateX(-50%);
@@ -247,7 +240,7 @@ nav.navbar{
 	}
 	.timeline .legend{
 		position: absolute;
-		color: #333;
+		color: #31979b;
 		font-size: 10px;
 		left: 50%;
 		-moz-transform:translateX(-50%);
@@ -277,7 +270,7 @@ nav.navbar{
 		position: absolute;
 		width: 60px;
 		height: 2px;
-		background-color: #eee;
+		background-color: #31979b;
 		top: 50%;
 
 		-moz-transform:translateY(-50%);
@@ -300,7 +293,7 @@ nav.navbar{
 		.timeline .events li:nth-child(odd) .hand:after{
 			border-top:5px solid transparent;
 			border-bottom:5px solid transparent;
-			border-right: 10px solid #aaa;
+			border-right: 10px solid #31979b;
 			left: -2px;
 		}
 	.timeline .events li:nth-child(even) .hand{
@@ -310,11 +303,12 @@ nav.navbar{
 			right: -2px;
 			border-top:5px solid transparent;
 			border-bottom:5px solid transparent;
-			border-left: 10px solid #aaa;
+			border-left: 10px solid #31979b;
 		}
 	.timeline .events li .data{
 		text-align: center;
 		padding:10px 20px;
+		background-color: #d8f3f0;
 	}
 		.timeline .events li:nth-child(odd) .data{
 			margin-left: 65px;
@@ -327,10 +321,10 @@ nav.navbar{
 }
 	.experience .location{
 		display: block;
-		font: 1.3em Georgia, Serif;
+		font: 1.3em Alegreya, Georgia, Serif;
 	}
 		.experience .location a{
-			color: #000;
+			color: #267173;
 			border-bottom: 1px dashed;
 		}
 			.experience .location a:hover{
@@ -338,12 +332,12 @@ nav.navbar{
 			}
 	.experience .summary{
 		display: block;
-		font: 1em Arial, sans-serif;
+		font: 1em Orienta, Arial, sans-serif;
 		margin: 10px 0;
 	}
 	.experience .time{
 		display: block;
-		font: .8em Arial, sans-serif;
+		font: .8em Orienta, Arial, sans-serif;
 		color: #999;
 	}
 		.experience .time .dtstart:after{
