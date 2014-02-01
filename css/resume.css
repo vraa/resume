@@ -140,7 +140,6 @@ nav.navbar{
 			border: 1px solid #CCDFF0;
 			border-radius: .5em;
 			color: #333;
-			box-shadow: 0 0 2px #eee;
 			cursor: default;
 		}
 			.skill{
@@ -148,23 +147,23 @@ nav.navbar{
 				background-position: 3px center;
 			}
 				.skill[data-rating='5']{
-					font-size: 1.5rem;
+					font-size: 1.7rem;
 					border-color: #95a5a6;
 				}
 				.skill[data-rating='4']{
-					font-size: 1.2rem;
+					font-size: 1.5rem;
 					border-color: #bdc3c7;
 				}
 				.skill[data-rating='3']{
-					font-size: 1rem;
+					font-size: 1.3rem;
 					border-color: #ecf0f1;
 				}
 				.skill[data-rating='2']{
-					font-size: .9rem;
+					font-size: 1.2rem;
 					border-color: #ecf0f1;
 				}
 				.skill[data-rating='1']{
-					font-size: .8rem;
+					font-size: 1.1rem;
 					border-color: #ecf0f1;
 				}
 			.skill.java{
@@ -214,6 +213,27 @@ nav.navbar{
 .official-projects{
 
 }
+.official-projects h3{
+	font:1.2em Alegreya, Georgia, Serif;
+	color: #fff;
+}
+	.official-projects .project h3{
+		color: #1A4B4C;
+	}
+.official-projects .heading{
+	border-bottom: 2px solid #1A4B4C;
+	background-color: #1A4B4C;
+	color: #fff;
+}
+.official-projects .project{
+	padding:10px 0;
+}
+	.official-projects .project:nth-child(odd){
+		background-color: #b2e6e1;
+	}
+	.official-projects .project:nth-child(even){
+		background-color: #d8f3f0;
+	}
 
 .meta{
 	font-size: .8em;
@@ -338,7 +358,6 @@ nav.navbar{
 	.experience .time{
 		display: block;
 		font: .8em Orienta, Arial, sans-serif;
-		color: #999;
 	}
 		.experience .time .dtstart:after{
 			content: " -";
