@@ -425,11 +425,16 @@ nav.navbar{
 		margin-right: 0;
 	}
 
+	.contact ul li{
+		display: block;
+		text-align: left;
+		border-right: none;
+	}
+
 }
 
 /* Tablet */
 @media (min-width: 768px){
-
 }
 
 /* Desktop */
