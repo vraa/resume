@@ -263,7 +263,7 @@ nav.navbar{
 	position: relative;
 	width: 100%;
 	background-color: #fff;
-	height: 400px;
+	height: 450px;
 }
 	.timeline .line{
 		position: absolute;
@@ -350,7 +350,7 @@ nav.navbar{
 		background-color: #d8f3f0;
 	}
 		.timeline .events li:nth-child(odd) .data{
-			margin-left: 65px;
+			margin-left: 65px;	
 		}
 		.timeline .events li:nth-child(even) .data{
 			margin-right: 60px;
@@ -385,7 +385,45 @@ nav.navbar{
 /* Phone */
 @media (max-width: 480px){
 
+	.timeline{
+		height: 500px;
+	}
 
+	.timeline .line{
+		left: 5%;
+	}
+	.timeline .legend{
+		left: 5%;
+	}
+	.timeline .events{
+		left: 5%;
+	}
+	.timeline .events li{
+		padding: 10px 0;
+	}
+	.timeline .events li:nth-child(even){
+		left: 0;
+	}
+	.timeline .events li .hand{
+		width: 30px;
+	}
+	.timeline .events li:nth-child(even) .hand{
+		left: 5px;
+	}
+	.timeline .events li:nth-child(even) .hand:after{
+		left: -2px;
+		border: none;
+		border-top:5px solid transparent;
+		border-bottom:5px solid transparent;
+		border-right: 10px solid #31979b;
+	}
+	.timeline .events li:nth-child(odd) .data{
+		margin-left: 35px;
+	}
+	.timeline .events li:nth-child(even) .data{
+		margin-left: 35px;
+		margin-right: 0;
+	}
 
 }
 
