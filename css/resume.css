@@ -234,7 +234,26 @@ nav.navbar{
 	.official-projects .project:nth-child(even){
 		background-color: #d8f3f0;
 	}
+.personal-projects{
 
+}
+	.personal-projects ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.personal-projects ul li{
+		padding: 10px 0;
+	}
+		.personal-projects ul li:nth-child(odd){
+			background-color: #B2E6E1;
+		}
+		.personal-projects ul li:nth-child(even){
+			background-color: #D8F3F0;
+		}
+		.personal-projects .name{
+			font-weight: bold;
+		}
 .meta{
 	font-size: .8em;
 	color: #aaa;
