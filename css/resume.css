@@ -272,8 +272,10 @@ nav.navbar{
 		background-color: #267173;
 		left: 50%;
 		top: 50%;
+		-webkit-transform:translateX(-50%);
 		-moz-transform:translateX(-50%);
 		transform:translateX(-50%);
+		-webkit-transform:translateY(-50%);
 		-moz-transform:translateY(-50%);
 		transform:translateY(-50%);
 	}
@@ -282,6 +284,7 @@ nav.navbar{
 		color: #31979b;
 		font-size: 10px;
 		left: 50%;
+		-webkit-transform:translateX(-50%);
 		-moz-transform:translateX(-50%);
 		transform:translateX(-50%);
 	}
@@ -311,7 +314,7 @@ nav.navbar{
 		height: 2px;
 		background-color: #31979b;
 		top: 50%;
-
+		-webkit-transform:translateY(-50%);
 		-moz-transform:translateY(-50%);
 		transform:translateY(-50%);
 	}
@@ -323,6 +326,7 @@ nav.navbar{
 			border-radius: 25%;
 			position: absolute;
 			top: 50%;
+			-webkit-transform:translateY(-50%);
 			-moz-transform:translateY(-50%);
 			transform:translateY(-50%);
 		}
