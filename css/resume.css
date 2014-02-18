@@ -448,7 +448,7 @@ nav.navbar{
 		border: none;
 		border-top:5px solid transparent;
 		border-bottom:5px solid transparent;
-		border-right: 10px solid #31979b;
+		border-right: 10px solid #F36C3D;
 	}
 	.timeline .events li:nth-child(odd) .data{
 		margin-left: 35px;
