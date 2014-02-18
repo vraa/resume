@@ -1,5 +1,5 @@
 body{
-	background-color: #1a4b4c;
+	background-color: #F5F0EB;
 	color: #000;
 }
 nav.navbar{
@@ -16,29 +16,45 @@ nav.navbar{
 	position: relative;
 }
 
+.fancy-title{
+	color: #F36C3D;
+	text-align: center;
+	text-transform: uppercase;
+	margin:0 0 5rem 0;
+	padding: 0;
+	z-index: 5;
+	font-family: 'Source Sans Pro', 'Trebuchet MS', sans-serif;
+	font-weight: 300;
+	letter-spacing: 2rem;
+}
+
 .resume{
-	font-family: Orienta, Arial, sans-serif;
+	font-family: 'Source Sans Pro', 'Trebuchet MS', sans-serif;
 	color: #333;
 	background-color: #fff;
 	padding: 0 35px;
 	z-index: 20;
+	border-top: 1px solid #F36C3D;
+	z-index: 10;
 }
 	.resume > section{
 	}
 	.resume p{
-		line-height: 2em;
+		font-size: 1.5rem;
+		line-height: 2.5rem;
 	}
 	.resume > section > article{
 		padding: 2rem;
 	}
 	.resume > section > article > h2{
-		font: 2rem Alegreya, Georgia, Serif;
-		font-weight: bold;
+		font: 2.5rem 'Source Sans Pro', 'Trebuchet MS', sans-serif;
+		line-height: 3.5rem;
+		font-weight: 300;
 		display: block;
-		color: #0d2526;
+		color: #F36C3D;
 	}
 	.resume a{
-		color: #267173;
+		color: #F36C3D;
 	}
 .alert{
 	font-size: .9em;
@@ -61,9 +77,9 @@ nav.navbar{
 	.hero .name{
 	}
 		.hero .name h1{
-			font: 3rem Alegreya, Georgia, Serif;
-			font-weight: bold;
-			text-align: center;
+			font:3rem 'Source Sans Pro', 'Trebuchet MS', sans-serif;
+			font-weight: 300;
+			color: #F36C3D;
 		}
 		.hero .note{
 			font-size: 1em;
@@ -72,7 +88,6 @@ nav.navbar{
 			margin: 0;
 		}
 	.contact{
-		border-bottom: 1px solid #eaeaea;
 		border-radius: 2px;
 		margin-top: 2em;
 	}
@@ -86,13 +101,9 @@ nav.navbar{
 			width: 100%;
 		}
 			.contact ul li{
-				display: inline-block;
+				display: block;
 				padding: 5px 10px;
-				border-right: 1px solid #eaeaea;
 			}
-				.contact ul li:last-child{
-					border-right:none;
-				}
 			.contact li a, .contact li{
 				color: #000;
 			}
@@ -102,6 +113,10 @@ nav.navbar{
 			.contact ul li i{
 				color: #888;
 				font-size: .8em;
+				margin-right: 1rem;
+			}
+			.contact li a em{
+				color: #888;
 			}
 .summary{
 }
@@ -137,7 +152,8 @@ nav.navbar{
 			display: inline-block;
 			margin: .4em .2em;
 			padding: .4em;
-			border: 1px solid #CCDFF0;
+			border: 1px solid ;
+			border: 1px solid #DAEDFB;
 			border-radius: .5em;
 			color: #333;
 			cursor: default;
@@ -148,23 +164,18 @@ nav.navbar{
 			}
 				.skill[data-rating='5']{
 					font-size: 1.7rem;
-					border-color: #95a5a6;
 				}
 				.skill[data-rating='4']{
 					font-size: 1.5rem;
-					border-color: #bdc3c7;
 				}
 				.skill[data-rating='3']{
 					font-size: 1.3rem;
-					border-color: #ecf0f1;
 				}
 				.skill[data-rating='2']{
 					font-size: 1.2rem;
-					border-color: #ecf0f1;
 				}
 				.skill[data-rating='1']{
 					font-size: 1.1rem;
-					border-color: #ecf0f1;
 				}
 			.skill.java{
 				background-image:url(http://www.google.com/s2/u/0/favicons?domain=java.com);
@@ -214,25 +225,28 @@ nav.navbar{
 
 }
 .official-projects h3{
-	font:1.2em Alegreya, Georgia, Serif;
+	font-size:1.8rem;
+	line-height: 2.8rem;
 	color: #fff;
+	font-weight: 300;
 }
 	.official-projects .project h3{
 		color: #1A4B4C;
+
 	}
 .official-projects .heading{
-	border-bottom: 2px solid #1A4B4C;
-	background-color: #1A4B4C;
+	border-bottom: 2px solid #fff;
+	background-color: #F36C3D;
 	color: #fff;
 }
 .official-projects .project{
 	padding:10px 0;
 }
-	.official-projects .project:nth-child(odd){
-		background-color: #b2e6e1;
-	}
 	.official-projects .project:nth-child(even){
-		background-color: #d8f3f0;
+		background-color: #FCF9F7;
+	}
+	.official-projects .project:nth-child(odd){
+		background-color: #DAEDFB;
 	}
 .personal-projects{
 
@@ -245,11 +259,23 @@ nav.navbar{
 	.personal-projects ul li{
 		padding: 10px 0;
 	}
-		.personal-projects ul li:nth-child(odd){
-			background-color: #B2E6E1;
+		.personal-projects ul li.heading{
+			border-bottom: 2px solid #fff;
+			background-color: #F36C3D;
+			color: #fff;
 		}
-		.personal-projects ul li:nth-child(even){
-			background-color: #D8F3F0;
+		.personal-projects .heading h3{
+			font-size: 2rem;
+			line-height: 3rem;
+			font-weight: 300;
+			margin: 0;
+			padding: 0;
+		}
+		.personal-projects li:nth-child(even){
+			background-color: #FCF9F7;
+		}
+		.personal-projects li:nth-child(odd){
+			background-color: #DAEDFB;
 		}
 		.personal-projects .name{
 			font-weight: bold;
@@ -269,7 +295,7 @@ nav.navbar{
 		position: absolute;
 		height: 90%;
 		width: 5px;
-		background-color: #267173;
+		background-color: #F36C3D;
 		left: 50%;
 		top: 50%;
 		-webkit-transform:translateX(-50%);
@@ -281,7 +307,7 @@ nav.navbar{
 	}
 	.timeline .legend{
 		position: absolute;
-		color: #31979b;
+		color: #F36C3D;
 		font-size: 10px;
 		left: 50%;
 		-webkit-transform:translateX(-50%);
@@ -312,7 +338,7 @@ nav.navbar{
 		position: absolute;
 		width: 60px;
 		height: 2px;
-		background-color: #31979b;
+		background-color: #F36C3D;
 		top: 50%;
 		-webkit-transform:translateY(-50%);
 		-moz-transform:translateY(-50%);
@@ -336,7 +362,7 @@ nav.navbar{
 		.timeline .events li:nth-child(odd) .hand:after{
 			border-top:5px solid transparent;
 			border-bottom:5px solid transparent;
-			border-right: 10px solid #31979b;
+			border-right: 10px solid #F36C3D;
 			left: -2px;
 		}
 	.timeline .events li:nth-child(even) .hand{
@@ -346,28 +372,31 @@ nav.navbar{
 			right: -2px;
 			border-top:5px solid transparent;
 			border-bottom:5px solid transparent;
-			border-left: 10px solid #31979b;
+			border-left: 10px solid #F36C3D;
 		}
 	.timeline .events li .data{
 		text-align: center;
 		padding:10px 20px;
-		background-color: #d8f3f0;
+		background-color: #FCF9F7;
 	}
 		.timeline .events li:nth-child(odd) .data{
 			margin-left: 65px;	
+			border-left: 1px solid #F36C3D;
 		}
 		.timeline .events li:nth-child(even) .data{
 			margin-right: 60px;
+			border-right: 1px solid #F36C3D;
 		}
 .experience{
 
 }
 	.experience .location{
 		display: block;
-		font: 1.3em Alegreya, Georgia, Serif;
+		font-size: 2rem;
+		font-weight: 300;
 	}
 		.experience .location a{
-			color: #267173;
+			color: #F36C3D;
 			border-bottom: 1px dashed;
 		}
 			.experience .location a:hover{
@@ -375,7 +404,7 @@ nav.navbar{
 			}
 	.experience .summary{
 		display: block;
-		font: 1em Orienta, Arial, sans-serif;
+		font-size: 1.5rem;
 		margin: 10px 0;
 	}
 	.experience .time{
