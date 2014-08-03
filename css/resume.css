@@ -123,6 +123,7 @@ nav.navbar{
 		margin-bottom: 1em;
 	}
 .technologies{
+	overflow: hidden;
 }
 	.technologies h2{
 	}
@@ -132,8 +133,15 @@ nav.navbar{
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		font-family: Consolas, Verdana, sans-serif;
+		font-family: Verdana, sans-serif;
+		float: left;
 	}
+		.technologies ul.highlights{
+			width: 50%;
+		}
+		.technologies ul.normal{
+			width: 50%;
+		}
 		.technologies > article > ul > li{
 			display: block;
 			margin: .5em 0;
@@ -170,6 +178,76 @@ nav.navbar{
 				.skill[data-rating='1']{
 					font-size: 1.1rem;
 				}
+	.highlights .skill{
+		margin: 0;
+		padding: 0;
+		background: none;
+		border: none;
+		position: relative;
+		width: 100px;
+		height: 100px;
+	}
+	.pot{
+		display: block;
+		border-radius: 50%;
+		background-color: #eee;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+		.pot em{
+			color: #fff;
+			font: 1.2rem Verdana;
+			z-index: 10;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform:translateX(-50%) translateY(-50%);
+			font-style: normal;
+			text-transform: uppercase;
+		}
+		.pot:after{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+			background-color: #000;
+		}
+
+		.skill[data-rating='6'] .pot:after{
+			clip: rect(0px, 100px, 100px, 0px);
+		}
+		.skill[data-rating='5'] .pot:after{
+			clip: rect(10px, 100px, 100px, 0px);
+		}
+		.skill[data-rating='4'] .pot:after{
+			clip: rect(30px, 100px, 100px, 0px);
+		}
+		.skill[data-rating='3'] .pot:after{
+			clip: rect(60px, 100px, 100px, 0px);
+		}
+			.skill[data-rating='3'] .pot em{
+				color: #000;
+			}
+		.skill[data-rating='2'] .pot:after{
+			clip: rect(70px, 100px, 100px, 0px);
+		}
+			.skill[data-rating='2'] .pot em{
+				color: #000;
+			}
+		.skill[data-rating='1'] .pot:after{
+			clip: rect(90px, 100px, 100px, 0px);
+		}
+			.skill[data-rating='1'] .pot em{
+				color: #000;
+			}
+
 			
 .experiences{
 	position: relative;
@@ -345,6 +423,7 @@ nav.navbar{
 			border-right: 1px solid #aaa;
 			border-radius: 5% 0 0 5%;
 		}
+
 .experience{
 
 }
@@ -385,6 +464,12 @@ nav.navbar{
 	.contact ul li i{
 		margin-right: 5px;
 	}
+	.technologies ul{
+		float: none;
+	}
+		.technologies ul.highlights, .technologies ul.normal{
+			width: 100%;
+		}
 
 	.timeline{
 		height: 650px;
