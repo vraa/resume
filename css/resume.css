@@ -241,6 +241,8 @@ nav.navbar{
 			position: absolute;
 			top: 50%;
 			left: 50%;
+			-webkit-transform:translateX(-50%) translateY(-50%);
+			-moz-transform:translateX(-50%) translateY(-50%);
 			transform:translateX(-50%) translateY(-50%);
 			font-style: normal;
 			text-transform: uppercase;
@@ -530,6 +532,8 @@ nav.navbar{
 		background-color: #000;
 		color: #fff;
 		right: 50%;
+		-webkit-transform:translateX(150%);
+		-moz-transform:translateX(150%);
 		transform:translateX(150%);
 		top: 0;
 		border-radius: 5px;
@@ -537,6 +541,8 @@ nav.navbar{
 		font: 1rem verdana, sans-serif;
 	}
 		.education .be .score{
+			-webkit-transform:translateX(200%);
+			-moz-transform:translateX(200%);
 			transform:translateX(200%);
 		}
 		.education .score:before{
@@ -544,6 +550,8 @@ nav.navbar{
 			position: absolute;
 			right: 100%;
 			top: 50%;
+			-webkit-transform:translateY(-50%);
+			-moz-transform:translateY(-50%);
 			transform:translateY(-50%);
 			width: 0;
 			height: 0;
