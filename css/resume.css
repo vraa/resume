@@ -320,44 +320,74 @@ nav.navbar{
 	.official-projects .project:nth-child(odd){
 		background-color: #fefefe;
 	}
-.personal-projects{
 
+article .work-list {
+  color: #666;
+  font: 1.4rem Georgia, Serif;
+  line-height: 2.4rem;
+  text-align: center;
+  margin: 0; }
+  article .work-list h2 {
+    font: 2.5rem Georgia, Serif;
+    color: #3d3d3d;
+    text-transform: uppercase; }
+  article .work-list h3 {
+    font: 1.8rem Georgia, Serif;
+    color: #3d3d3d; }
+  article .work-list img {
+    max-width: 100%;
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+  	article .work-list img:hover{
+  		-webkit-filter: none;
+	    -moz-filter: none;
+	    filter: none;
+  	}
+  article .work-list ol {
+  	padding:0;
+    list-style: none;
+    overflow: hidden; }
+    article .work-list ol li {
+      display: block; }
+      article .work-list ol li p {
+        font: 1.1rem Verdana, sans-serif;
+        line-height: 2.1rem;
+        margin-top:10px;
+      }
+      article .work-list ol li a {
+        font-size: 1rem; }
+@media (min-width: 760px) {
+  article .work-list ol li {
+    float: left;
+    width: 33%;
+    padding: 0 30px;
+    border-right: 1px solid #ededed; }
+    article .work-list ol li.featured {
+      width: 100%;
+      float: none;
+      display: block;
+      margin: 0;
+      border-bottom: 1px solid #ededed;
+      padding: 20px 0;
+      border-right: none; }
+      article .work-list ol li.featured p {
+        font-size: 1.4rem; }
+    article .work-list ol li:last-child {
+      border-right: none; } 
 }
-	.personal-projects ul{
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-	.personal-projects ul li{
-		padding: 10px 0;
-		border:1px solid #eee;
-	}
-		.personal-projects ul li.heading{
-			border-bottom: 2px solid #fff;
-			background-color: #000;
-			color: #fff;
-		}
-		.personal-projects .heading h3{
-			font:1.8rem Georgia, Serif;
-			line-height: 3rem;
-			font-weight: 300;
-			margin: 0;
-			padding: 0;
-		}
-		.personal-projects li:nth-child(even){
-			background-color: #fafafa;
-		}
-		.personal-projects li:nth-child(odd){
-			background-color: #fefefe;
-		}
-		.personal-projects .name{
-			font-weight: bold;
-		}
+
+
 .technologies-used{
 	font-family: Consolas, Verdana, sans-serif;
 	font-size: 1.4rem!important;
 	line-height: 2.4rem!important;
 }
+	.work-list .technologies-used{
+		font-size: 1rem!important;
+		margin-top: 10px;
+	}
 .meta{
 	font-size: .8em;
 	color: #aaa;
@@ -577,6 +607,7 @@ nav.navbar{
 	}
 		.technologies ul.highlights, .technologies ul.normal{
 			width: 100%;
+			text-align: center;
 		}
 
 	.timeline{
