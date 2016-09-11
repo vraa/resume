@@ -179,10 +179,10 @@ main h2 {
         .skills .primary li {
             margin: 5px 5px 5px 0;
             padding: 3px 10px;
-            background-color: #eee;
+            background-color: #fafafa;
             color: #333;
             border-radius: 10px;
-            border: 1px solid #eaeaea;
+            border: 1px solid #efefef;
         }
 
     .skills .secondary {
@@ -192,18 +192,30 @@ main h2 {
     }
         .skills .secondary li {
             margin-bottom: 20px;
+            margin-right: 20px;
         }
 
-            .skills .secondary li:after {
-                content: '/';
-                display: inline-block;
-                margin: 0 10px;
-                color: #aaaaaa;
-            }
-
-            .skills .secondary li:last-child:after{
-                display: none;
-            }
+    .skill:after {
+        margin-top: 3px;
+        display: block;
+        color: #666;
+        font-size: .6rem;
+    }
+        .skill[data-rating="5"]:after {
+            content: '⚫⚫⚫⚫⚫';
+        }
+        .skill[data-rating="4"]:after {
+            content: '⚫⚫⚫⚫⚪';
+        }
+        .skill[data-rating="3"]:after {
+            content: '⚫⚫⚫⚪⚪';
+        }
+        .skill[data-rating="2"]:after {
+            content: '⚫⚫⚪⚪⚪';
+        }
+        .skill[data-rating="1"]:after {
+            content: '⚫⚪⚪⚪⚪';
+        }
 
 .timeline{
     position: relative;
